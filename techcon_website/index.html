@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TechCon 2024 — Home</title>
+  <meta name="description" content="TechCon 2024 — A conference exploring the future of technology and innovation.">
+  <style>
+    /* Minimal, accessible styling for the demo */
+    :root{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.5}
+    body{margin:0;padding:0;background:#ffffff;color:#111}
+    header,footer{padding:1rem;background:#f4f6f8}
+    .container{max-width:1000px;margin:0 auto;padding:1rem}
+    nav ul{list-style:none;padding:0;margin:0;display:flex;gap:1rem}
+    nav a{color:inherit;text-decoration:none;padding:.25rem .5rem;border-radius:.25rem}
+    nav a:focus,nav a:hover{outline:2px solid #6aa0ff}
+    main{padding:1rem}
+    .hero{display:grid;gap:1rem}
+    video{max-width:100%;height:auto;border:1px solid #ddd}
+    footer{font-size:.9rem;text-align:center}
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;background:#000;color:#fff;padding:.5rem}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header role="banner">
+    <div class="container">
+      <h1 id="site-title">TechCon 2024</h1>
+      <nav role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <section id="introduction" aria-labelledby="intro-heading" class="hero">
+      <h2 id="intro-heading">Welcome to TechCon 2024</h2>
+      <p>
+        TechCon 2024 brings together leaders in AI, cloud, cybersecurity, and developer tooling for two days of
+        talks, workshops, and networking. Join us on November 12–13, 2024 to explore emerging tech and practical
+        strategies you can use today.
+      </p>
+
+      <!-- Promotional video: place your video file at videos/promo.mp4 and subtitles at videos/promo_en.vtt -->
+      <figure>
+        <figcaption>Watch our 60-second promo for TechCon 2024. Subtitles available.</figcaption>
+        <video controls preload="metadata" poster="images/promo-poster.jpg" aria-describedby="promo-desc">
+          <source src="videos/promo.mp4" type="video/mp4">
+          <!-- Subtitles file must be provided separately (see repo structure). -->
+          <track kind="subtitles" srclang="en" label="English" src="videos/promo_en.vtt">
+          Your browser does not support the video element. A downloadable version is available
+          <a href="videos/promo.mp4">here</a>.
+        </video>
+        <p id="promo-desc">A short descriptive text for screen reader users: The video includes footage of keynote speakers, demo booths, and attendees networking.</p>
+      </figure>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p>&copy; TechCon 2024. All rights reserved. | <a href="privacy.html">Privacy</a></p>
+    </div>
+  </footer>
+</body>
+</html>
